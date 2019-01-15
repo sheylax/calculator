@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>calc</title>
+</head>
+<body>
+	<form name="calculator">
+		<input type="text" name="sum"/>
+		<table width="200" border="1">
+  <tbody>
+    <tr>
+      <td><input type="button" value="1" onclick="calculator.sum.value +='1'"/></td>
+      <td><input type="button" value="2" onclick="calculator.sum.value +='2'"/></td>
+      <td><input type="button" value="3" onclick="calculator.sum.value +='3'"/></td>
+      <td><input type="button" value="+" onclick="calculator.sum.value +='+'"/></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="4" onclick="calculator.sum.value +='4'"/></td>
+      <td><input type="button" value="5" onclick="calculator.sum.value +='5'"/></td>
+      <td><input type="button" value="6" onclick="calculator.sum.value +='6'"/></td>
+      <td><input type="button" value="*" onclick="calculator.sum.value +='*'"/></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="7" onclick="calculator.sum.value +='7'"/></td>
+      <td><input type="button" value="8" onclick="calculator.sum.value +='8'"/></td>
+      <td><input type="button" value="9" onclick="calculator.sum.value +='9'"/></td>
+      <td><input type="button" value="/" onclick="calculator.sum.value +='/'"/></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="-" onclick="calculator.sum.value +='-'"/></td>
+      <td><input type="button" value="0" onclick="calculator.sum.value +='0'"/></td>
+      <td><input type="button" value="C" onclick="calculator.sum.value =''"/></td>
+       <td><input type="button" value="=" onclick="calculator.sum.value =eval(calculator.sum.value)"/></td>
+   </tr>
+  </tbody>
+</table>
+
+	</form>
+</body>
+</html>
